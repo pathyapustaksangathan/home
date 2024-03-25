@@ -180,5 +180,5 @@ var swiper = new Swiper(".mySwiper", {
 imghover();
 
 function formpage(){
-    window.open('EnrollNow.html'," ");
+    window.open('https://pathyapustaksangathan.github.io/enrollnow/'," ");
 }

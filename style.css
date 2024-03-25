@@ -61,7 +61,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  z-index: 99;
+  z-index: 990;
   top: 0;
   background-color: black;
   margin: 0% 1%;
@@ -115,6 +115,15 @@ body {
   text-transform: uppercase;
   font-weight: 900;
   line-height: 6vw;
+}
+#page1 #container #left button{
+  color: black;
+  background-color: white;
+  padding: 0.5vw 1.5vw;
+  font-size: 2vw;
+  border-radius: 10px;
+  /* margin-left: 20vw; */
+
 }
 #right {
   height: 100%;
@@ -244,6 +253,15 @@ body {
   object-fit: cover;
   top: 0;
 }
+
+.imagefull{
+
+}
+
+
+
+
+
 
 #page3 .box .desc h3 {
   font-size: 1.3rem;
@@ -541,14 +559,34 @@ padding: 2vw;
 @media only screen and (max-width: 480px) {
   /* Add styles for mobiles here */
   /* Example: Adjusting layout, hiding elements, etc. */
-  #nav2 {
-    flex-direction: column; /* Example: Stacking navigation links vertically for mobiles */
+  #main #mouse{
+    display: none;
   }
-  #nav3 button {
+  #nav2 {
+    /* display: none; */
+    flex-direction: row; /* Example: Stacking navigation links vertically for mobiles */
+    font-size: 0.8rem;
+  }
+  #nav3 button,#nav3 img {
+    display: none;
     font-size: 1.2vw; /* Example: Further decrease button font size for mobiles */
   }
-  #page1 #container {
-    /* display: inline; */
+  #page1 #container{
+    display: flex;
+    flex-direction: column;
+  }
+  #page1 #container #left {
+   padding-top: 20vh;
+   width: 100%;
+   
+  }
+  #page1 #container #left h1{
+    font-size: 12vw;
+    margin-bottom: 3vh;
+  }
+  #page1 #container #right{
+    width: 100%;
+    margin-top: -15vh;
   }
 
   #page1,
@@ -561,6 +599,7 @@ padding: 2vw;
 } */
   #page2 {
     display: block;
+    height:150vh
   }
   #page2 #vdo {
     margin: auto;
@@ -571,14 +610,66 @@ padding: 2vw;
     padding-bottom: 20vh;
     width: 100vw;
     padding-right: 5vw;
+    margin-top: 10vh;
+
   }
+  #page2 #profile #aryan img {
+  width: 40%;
+  height: 70%;
+  padding-top: 20vh;
+  }
+  #page2 #profile #aryan #desc h1{
+font-size: 6vw;
+  }
+  #page2 #profile #aryan #desc h2{
+font-size: 5vw;
+  }
+  #page2 #profile #aryan #desc h3{
+font-size: 5vw;
+  }
+  #page4 #about p{
+    font-size: 4vw;
+  }
+  #main #footer{
+    background-color: black;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+  }
+  #main #footer #contacts {
+    margin-left: -30vh;
+    font-size: 3vw;
+text-align: left;
+padding: 0;
+
+
+  }
+  #main #footer #contacts>a i{
+    font-size: 5vw;
+  }
+  #main #footer img{
+    width: 100%;
+  }
+
+  #main #by{
+    /* margin-top: 5vh; */
+    height: 20vh;
+    border-top: 5px solid white;
+  }#main #by h4{
+    font-size:4vw;
+    
+  }
+
 
   /* #aryan img{
     width: ;
 } */
 
   #page3 {
-    height: 300%;
+    height: 310%;
+    /* margin-top: 10vh; */
   }
   #page3 .box {
     height: 400px;

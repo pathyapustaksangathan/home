@@ -89,13 +89,6 @@ body {
   color: rgb(255, 255, 255);
   filter: invert();
 }
-#nav3 button {
-  color: black;
-  background-color: white;
-  padding: 0.7vw 1.5vw;
-  font-size: 2vw;
-  border-radius: 20px;
-}
 
 #container {
   z-index: 7;
@@ -121,8 +114,7 @@ body {
   background-color: white;
   padding: 0.5vw 1.5vw;
   font-size: 2vw;
-  border-radius: 10px;
-  
+  border-radius: 10px;  
 }
 #right {
   height: 100%;

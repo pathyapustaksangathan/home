@@ -7,7 +7,7 @@ function mousemover(){
         gsap.to(mouse,{
     x:pos.x,
     y:pos.y,
-    delay:0.2,
+    delay:0.3,
         })
     })
     gsap.from(mouse,{
@@ -50,7 +50,7 @@ tl.from("#page1 #nav img,#page1 #nav a, #page1 #nav #nav3",{
     delay:0.5
 })
 
-tl.from("#page1 #left h1",{
+tl.from("#page1 #left h1,#page1 #left button",{
     x:-1000,
     duration:0.5,
     stagger:0.2
@@ -142,3 +142,43 @@ var swiper = new Swiper(".mySwiper", {
         disableOnInteraction: true,
       }
   });
+
+
+
+
+
+  function imghover() {
+    let boxes = document.querySelectorAll("#page3 .box");
+    
+    boxes.forEach(box => {
+        let img = box.querySelector("img");
+        let desc = box.querySelector(".desc");
+        let originalImgHeight = img.style.height;
+        let originalDescDisplay = desc.style.display;
+
+        let clicked = false;
+
+        box.addEventListener("click", function() {
+            if (!clicked) {
+                desc.style.display = "none";
+                img.style.height = "100%";
+                clicked = true;
+            } else {
+                desc.style.display = originalDescDisplay;
+                img.style.height = originalImgHeight;
+                clicked = false;
+            }
+        });
+
+        box.addEventListener("dblclick", function() {
+            let facebookProfile = box.getAttribute("data-facebook");
+            window.open(facebookProfile, "_blank");
+        });
+    });
+}
+
+imghover();
+
+function formpage(){
+    window.open('EnrollNow.html'," ");
+}

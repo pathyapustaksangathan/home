@@ -204,6 +204,11 @@ body {
   text-decoration: underline;
   margin-top: 50px;
 }
+#page2 #profile #aryan #desc h4 {
+  text-decoration: none;
+  margin-top: 2vh;
+
+}
 
 #mainPage3 {
   /* height: 100vh; */

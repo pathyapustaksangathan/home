@@ -138,11 +138,11 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     loop: true,
     autoplay: {
-        delay: 2000,
-        disableOnInteraction: true,
-      }
+      delay: 2500,
+      disableOnInteraction: false,
+    },
   });
-
+  
 
 
 
